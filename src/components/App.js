@@ -5,17 +5,17 @@ import NotFound from './NotFound';
 import Layout from './Layout';
 
 function App() {
-    return (
-      <Router>
-        <Layout>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </Layout>
-      </Router>
-    );
-  }
-  
-  export default App;
+  return (
+    <Router>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Layout>
+    </Router>
+  );
+}
+
+export default App;

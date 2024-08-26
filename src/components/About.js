@@ -1,35 +1,34 @@
 import React from 'react';
 import Collapse from '../components/Collapse';
-import '../styles/About.scss';
 import Banner from './Banner';
+import bannerAboutImage from '../assets/bannerAbout.png';
+import '../styles/About.scss';
 
 function About() {
   return (
     <div className="about">
-      <header className="header">
-        <div className="kasa-logo">
-          <img src="../assets/logo.png" alt="logo Kasa" />
-        </div>
-        <nav>
-          <a href="/">Accueil</a>
-          <a href="/about">À Propos</a>
-        </nav>
-      </header>
-      <Banner imageUrl="../assets/bannerAbout.png" />
-      <Collapse title="Fiabilité">
-        <p>Les annonces postées sur Kasa garantissent une fiabilité totale...</p>
-      </Collapse>
-      <Collapse title="Respect">
-        <p>La bienveillance fait partie des valeurs fondamentales de Kasa...</p>
-      </Collapse>
-      <Collapse title="Service">
-        <p>Nos équipes sont à votre disposition pour vous fournir une expérience parfaite...</p>
-      </Collapse>
-      <Collapse title="Responsabilité">
-        <p>La sécurité est la priorité de Kasa...</p>
-      </Collapse>
+      <Banner image={bannerAboutImage} />
+      <div className="collapse-section">
+        <Collapse
+          title="Fiabilité"
+          content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."
+        />
+        <Collapse
+          title="Respect"
+          content="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."
+        />
+        <Collapse
+          title="Service"
+          content="La qualité du service est au cœur de notre engagement chez Kasa. Nous veillons à ce que chaque interaction, que ce soit avec nos hôtes ou nos locataires, soit empreinte de respect et de bienveillance."
+        />
+        <Collapse
+          title="Sécurité"
+          content="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
+        />
+      </div>
     </div>
   );
 }
 
 export default About;
+

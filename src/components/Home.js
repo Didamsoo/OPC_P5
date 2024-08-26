@@ -1,23 +1,14 @@
 import React from 'react';
-import logo from '../assets/logo.png';
 import Banner from './Banner';
-import '../styles/Home.scss';
 import Card from './Card';
 import logements from '../datas/logements.json';
+import bannerImage from '../assets/banner.png';
+import '../styles/Home.scss';
 
 function Home() {
   return (
     <div className="home">
-      <header className="header">
-        <div className="kasa-logo">
-          <img src={logo} alt="logo Kasa" />
-        </div>
-        <nav>
-          <a href="/">Accueil</a>
-          <a href="/about">A Propos</a>
-        </nav>
-      </header>
-      <Banner />
+      <Banner image={bannerImage} title="Chez vous, partout et ailleurs" />
       <div className="gallery">
         {logements.map((logement) => (
           <Card key={logement.id} title={logement.title} imageUrl={logement.cover} />
