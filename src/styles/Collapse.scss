@@ -1,0 +1,39 @@
+.collapse {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  
+    .collapse-header {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      background-color: #f9f9f9;
+      cursor: pointer;
+  
+      h3 {
+        margin: 0;
+      }
+  
+      .collapse-icon {
+        transition: transform 0.3s ease;
+        &.open {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  
+    .collapse-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+  
+      &.open {
+        max-height: 500px; /* Adjust based on content */
+      }
+  
+      padding: 10px;
+      background-color: #fff;
+    }
+  }
+  

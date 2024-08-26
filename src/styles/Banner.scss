@@ -1,0 +1,40 @@
+.banner {
+  width: 1240px;
+  height: 223px;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  position: relative;
+  margin: 10px auto; /* Centre horizontalement la bannière */
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centre le contenu verticalement */
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Couche noire avec opacité */
+  z-index: 1;
+}
+
+.banner-title {
+  position: absolute;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  z-index: 2; /* Assurez-vous que le texte soit au-dessus de la superposition */
+  text-align: center;
+  margin: 0; /* Enlève les marges par défaut du titre */
+}
