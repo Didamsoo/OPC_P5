@@ -5,9 +5,13 @@ import '../styles/Collapse.scss';
 function Collapse({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);
 
+  const toggleCollapse = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div className={`collapse ${isOpen ? 'open' : ''}`}>
-      <div className="collapse-header" onClick={() => setIsOpen(!isOpen)}>
+      <div className="collapse-header" onClick={toggleCollapse}>
         <h3 className="collapse-title">{title}</h3>
         <div className="collapse-arrow">
           {isOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}

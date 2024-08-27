@@ -1,0 +1,55 @@
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    border-radius: 15px; // Radius pour les coins arrondis de l'image
+    overflow: hidden;
+  
+    .slide-image {
+    border-radius: 15px;
+    width: 1240px;
+    height: 415px;
+    object-fit: cover; 
+    }
+  
+    .arrow {
+        position: absolute;
+        color: #ffffff;
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 2;
+        font-size: 119.64px; /* Taille de l'icône */
+        opacity: 1;
+    
+        &.left {
+          left: 10px; /* Ajustement pour le positionnement à l'extrémité gauche */
+          top: 50%;
+          transform: translateY(-50%);
+        }
+    
+        &.right {
+          right: 10px; /* Ajustement pour le positionnement à l'extrémité droite */
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+
+
+    .page-number {
+        position: absolute;
+        width: 24px;
+        height: 32.4px;
+        top: 357.67px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 25.67px;
+        text-align: center;
+        color: #FFFFFF;
+      }
+  }
+  

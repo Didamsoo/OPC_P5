@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
+import Footer from './Footer';
 
 function Layout({ children }) {
   return (
@@ -15,7 +16,7 @@ function Layout({ children }) {
         </nav>
       </header>
       <main>{children}</main>
-      <footer>My Footer</footer>
+      <Footer />
     </div>
   );
 }

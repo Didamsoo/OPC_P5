@@ -1,61 +1,59 @@
 .collapse {
-    width: 1023px;
-    margin: 30px auto;
-    border-radius: 5px;
-    overflow: hidden;
-    background: #f6f6f6;
-  
-    &-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-      background: #ff6060;
-      cursor: pointer;
-      border-radius: 5px 5px 0 0;
-    }
-  
-    &-title {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 24px;
-      font-weight: 700;
-      color: #fff;
-      margin: 0;
-    }
-  
-    &-arrow {
-      font-size: 24px; 
-      color: #fff;
-      transition: transform 0.3s ease;
-    }
-  
-    &-content {
-      padding: 20px;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 25.67px;
-      background: #fff;
-      color: #000;
-      border-top: none;
-      border-radius: 0 0 5px 5px;
-      background: #F6F6F673;
+  width: 1023px;
+  margin: 20px auto;
+  border-radius: 5px;
+  overflow: hidden;
 
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #ff6060;
+    cursor: pointer;
+    border-radius: 5px 5px 0 0;
+  }
+
+  &-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+  }
+
+  &-arrow {
+    font-size: 24px; 
+    color: #fff;
+    transition: transform 0.3s ease;
+  }
+
+  &-content {
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.67px;
+    background: #fff;
+    color: #000;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    background: #F6F6F673;
+  }
+
+  &.open .collapse-content {
+    animation: slideDown 0.3s ease-out;
+  }
+
+  @keyframes slideDown {
+    from {
+      max-height: 0;
+      opacity: 0;
     }
-  
-    &.open .collapse-content {
-      animation: slideDown 0.3s ease-out;
-    }
-  
-    @keyframes slideDown {
-      from {
-        max-height: 0;
-        opacity: 0;
-      }
-      to {
-        max-height: 1000px;
-        opacity: 1;
-      }
+    to {
+      max-height: 1000px;
+      opacity: 1;
     }
   }
-  
+}
