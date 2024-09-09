@@ -21,6 +21,7 @@
     font-weight: 700;
     color: #fff;
     margin: 0;
+    
   }
 
   &-arrow {
@@ -55,5 +56,17 @@
       max-height: 1000px;
       opacity: 1;
     }
+  }
+}
+
+
+
+
+
+
+
+@media (max-width: 769px) {
+  .collapse {
+    width: 360px;
   }
 }
