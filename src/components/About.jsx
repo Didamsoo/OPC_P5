@@ -5,10 +5,14 @@ import bannerAboutImage from '../assets/bannerAbout.png';
 import '../styles/About.scss';
 
 function About() {
+  // Cette page affiche la section "À propos" avec une bannière en haut
   return (
     <div className="about">
-      <Banner image={bannerAboutImage} />
+      {/* J'affiche une bannière avec l'image spécifique pour la page À propos */}
+      <Banner image={bannerAboutImage} title="À Propos" /> 
+      
       <div className="collapse-section">
+        {/* J'utilise le composant Collapse pour afficher différentes sections d'informations */}
         <Collapse
           title="Fiabilité"
           content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."

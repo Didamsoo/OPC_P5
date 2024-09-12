@@ -1,0 +1,18 @@
+.tag {
+    background-color: #ff6060;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  
+  @media (max-width: 769px) {
+    .tag {
+      font-family: Montserrat;
+      font-size: 10px;
+      font-weight: 700;
+      line-height: 14.26px;
+      text-align: center;
+  }
+}

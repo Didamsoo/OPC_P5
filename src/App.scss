@@ -1,0 +1,45 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.App-header {
+  flex-grow: 1;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+footer {
+  background-color: #000;
+  color: white;
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  text-align: center;
+}
+
+@media (max-width: 769px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    padding: 20px 0;
+  }
+}
