@@ -20,7 +20,7 @@ function Layout({ children }) {
         </nav>
       </header>
       <main>{children}</main> {/* Le contenu principal est rendu ici */}
-      <Footer /> {/* Le footer global */}
+      <Footer /> 
     </div>
   );
 }

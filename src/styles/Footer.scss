@@ -1,3 +1,4 @@
+// Base styles
 body, html {
   margin: 0;
   padding: 0;
@@ -7,6 +8,7 @@ body, html {
   flex-direction: column;
 }
 
+// Footer styles
 .footer {
   width: 100vw;
   padding: 98px 0 58px 0;
@@ -20,24 +22,24 @@ body, html {
   margin: 0;
   position: relative;
   bottom: 0;
+
+  &-logo {
+    width: 122px;
+    height: 39.44px;
+    cursor: pointer;
+  }
+
+  &-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 17.11px;
+    text-align: center;
+    color: #FFFFFF;
+  }
 }
 
+// Main content styles
 .main-content {
   flex-grow: 1;
 }
-
-.footer-logo {
-  width: 122px;
-  height: 39.44px;
-  cursor: pointer;
-}
-
-.footer-text {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 17.11px;
-  text-align: center;
-  color: #FFFFFF;
-}
-

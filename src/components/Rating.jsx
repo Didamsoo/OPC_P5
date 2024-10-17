@@ -9,7 +9,7 @@ function Rating({ numberOfStars }) {
       {/* Je crée un tableau d'étoiles avec une classe active pour celles qui sont comprises dans le rating */}
       {Array.from({ length: maxStars }, (v, i) => (
         <span
-          key={i}
+          key={i} //Attribut une clée unique à chaque étoile, afin d'indentifier chaque element de la liste 
           className={i < numberOfStars ? 'active' : 'inactive'}
         >
           ★
