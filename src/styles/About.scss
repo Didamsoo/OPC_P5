@@ -22,3 +22,18 @@
     }
   }
   
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    min-height: 63vh;
+  
+    .banner {
+      margin-bottom: 20px; 
+    }
+  
+  
+    footer {
+      margin-top: auto; 
+    }
+  }

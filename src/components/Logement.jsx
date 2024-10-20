@@ -32,7 +32,7 @@ function Logement() {
             <div className="logement-tags">
               {/* J'affiche les tags du logement */}
               {logement.tags.map((tag, index) => (
-                <Tag key={`${tag}-${index}`} text={tag} />
+                <Tag key={`${tag}-${index}`} text={tag} /> //Je génère une clé unique pour chaque composant Tag en utilisant le nom du tag et son index.
               ))}
             </div>
           </div>
